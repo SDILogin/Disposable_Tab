@@ -1,0 +1,45 @@
+#id_add{
+	background: #527397; 
+	width: 50%;  
+	border-radius: 5px;
+	text-align: center;
+	font-family: monospace;
+	font-size: 15;	
+	margin-left: 51%; 
+}
+
+#id_refresh{
+	float: left;
+	background: #527397; 
+	width: 50%; 
+	text-align: center;
+	border-radius: 5px;
+}
+
+.row{
+	width:250px;
+	padding: 5px;
+	float:left;
+	border-top: solid 1px #527397;
+}
+
+.delete_button{
+	width: 20px;
+	height: 20px;
+	float: left;
+	padding: 5px;
+}
+
+a{
+	margin-left: 20px;
+	padding-top: 7px;
+}
+
+body{
+	background: white;
+	width: 250px;
+}
+
+font{
+	color: white;
+}
