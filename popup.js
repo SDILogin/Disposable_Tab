@@ -124,9 +124,15 @@ clicker.onclick = function(){
 		var tabUrl= tab.url;
 		var tabTitle = tab.title;
 
+		chrome.runtime.sendMessage({
+			command: "save_link", 
+			url: tabUrl,
+			title: tabTitle}, 
+			function(response) {}
+		);
 		links.push({"link": tabUrl, "title": tabTitle});
-		localStorage["links"] = JSON.stringify(links);
-	
+/*		localStorage["links"] = JSON.stringify(links);
+	*/
 		push_one(links.length-1);
 	});
 }

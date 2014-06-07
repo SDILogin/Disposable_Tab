@@ -6,13 +6,25 @@
 
 	"permissions": [
 		"tabs",
-		"storage"
+		"storage",
+		"activeTab"
 	],
+
+	"background":{
+		"scripts": ["background.js"],
+		"persistent": true
+	},
 
 	"browser_action": {
 		"default_title": "LinkSaver",
 		"default_popup": "popup.html"		
 	},
+
+	"content_scripts":[{
+		"matches": ["http://*/","https://*/*","http://*/*"],
+		"js" : ["content.js"],
+		"run_at" : "document_end"
+	}],
 
 	"options_page": "options.html",
 
